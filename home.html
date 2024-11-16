@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="wdt_app.js" defer></script>
+  <title>Reception Management Dashboard</title>
+</head>
+<body>
+  <header>
+    <img src="wdt_logo.png" alt="WeDeliverTECH Logo" class="logo">
+    <h1>Reception Management Dashboard</h1>
+  </header>
+
+  <section class="staff-section">
+    <h2>Staff</h2>
+    <table id="staffTable">
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email address</th>
+          <th>Status</th>
+          <th>Out Time</th>
+          <th>Duration</th>
+          <th>Expected Return Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamically populated via JavaScript -->
+      </tbody>
+    </table>
+    <div class="button-group">
+      <button class="out-btn" id="outButton">Out</button>
+      <button class="in-btn" id="inButton">In</button>
+    </div>
+  </section>
+
+  <section class="schedule-delivery">
+    <h2>Schedule Delivery</h2>
+    <form id="deliveryForm">
+      <label for="vehicle">Vehicle:</label>
+      <input type="text" id="vehicle" name="vehicle" required>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+      <label for="telephone">Telephone:</label>
+      <input type="text" id="telephone" name="telephone" required>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+      <label for="returnTime">Return time:</label>
+      <input type="time" id="returnTime" name="returnTime" required>
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+  </section>
+
+  <section class="delivery-board">
+    <h2>Delivery Board</h2>
+    <table id="deliveryTable">
+      <thead>
+        <tr>
+          <th>Vehicle</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Telephone</th>
+          <th>Delivery Address</th>
+          <th>Return Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamically populated via JavaScript -->
+      </tbody>
+    </table>
+    <button class="clear-btn" id="clearButton">Clear</button>
+  </section>
+</body>
+</html>
