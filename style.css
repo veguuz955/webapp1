@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004a7c;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header .logo {
+    margin-right: 15px;
+    height: 50px;
+  }
+  
+  h1, h2 {
+    color: #004a7c;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #004a7c;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #007cb9;
+    color: white;
+  }
+  
+  td {
+    background-color: #d1eaf5;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .out-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .in-btn {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .add-btn, .clear-btn {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #004a7c;
+  }
+  
+  /* Apply to <td> elements in a selected row */
+tr.selected-row td {
+    background-color: #4CAF50 !important; /* Force green background */
+    color: inherit !important; /* Retain the original text color */
+}
